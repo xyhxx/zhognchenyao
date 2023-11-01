@@ -1,0 +1,5 @@
+export {default as Layer} from './layout'
+export {default as Background} from './background'
+export {default as Wave} from './wave'
+export {default as Line} from './line'
+export {default as Pic} from './pic'

@@ -1,0 +1,23 @@
+.pic-bg {
+  position: absolute;
+  right: 20%;
+  bottom: 164px;
+  width: 188px;
+  height: 360px;
+  margin: 0 -64px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: 50% 90%;
+  animation: pic-animate 4s 0.1s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes pic-animate {
+  0% {
+    transform: translate3d(15%, 0, 0) rotateZ(10deg);
+  }
+
+  100% {
+    transform: translate3d(-15%, 0, 0) rotateZ(-10deg);
+  }
+}

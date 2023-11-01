@@ -1,0 +1,131 @@
+.line {
+  position: relative;
+  left: -10%;
+  display: block;
+  width: 120%;
+
+  & img {
+    width: 100%;
+  }
+
+  & .pic {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 280px;
+    height: 280px;
+    margin: 0 -140px;
+    background-repeat: no-repeat;
+    background-size: 280px 280px;
+    transform-origin: 50% 0%;
+  }
+}
+
+.line.depth-60 {
+  top: -9%;
+  transform: scale(1.1);
+}
+
+.line.depth-60 .hanger {
+  transform: scale(0.38);
+}
+
+.line.depth-30 {
+  top: -2%;
+  transform: scale(1.05);
+}
+
+.line.depth-30 .hanger {
+  transform: scale(0.31);
+}
+
+.line.depth-10 {
+  top: 5%;
+  transform: scale(1);
+}
+
+.line.depth-10 .hanger {
+  transform: scale(0.25);
+}
+
+.hanger {
+  position: absolute;
+  transform-origin: 0% 0%;
+}
+
+.hanger.position-1 {
+  top: 28%;
+  left: 10%;
+}
+
+.hanger.position-2 {
+  top: 46%;
+  left: 20%;
+}
+
+.hanger.position-3 {
+  top: 59%;
+  left: 30%;
+}
+
+.hanger.position-4 {
+  top: 66.5%;
+  left: 40%;
+}
+
+.hanger.position-5 {
+  top: 69.5%;
+  left: 50%;
+}
+
+.hanger.position-6 {
+  top: 66.5%;
+  left: 60%;
+}
+
+.hanger.position-7 {
+  top: 59%;
+  left: 70%;
+}
+
+.hanger.position-8 {
+  top: 46%;
+  left: 80%;
+}
+
+.hanger.position-9 {
+  top: 28%;
+  left: 90%;
+}
+
+.swing-1 {
+  animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-2 {
+  animation: swing 3.5s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-3 {
+  animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-4 {
+  animation: swing 2.5s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-5 {
+  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotateZ(10deg);
+  }
+
+  100% {
+    transform: rotateZ(-10deg);
+  }
+}
